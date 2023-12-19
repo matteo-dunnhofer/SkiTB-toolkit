@@ -5,6 +5,8 @@
 [![arXiv-2312.09723](https://img.shields.io/badge/arXiv-2312.09723-red.svg)](https://arxiv.org/abs/2312.09723)
 <!-- end badges -->
 
+![SkiTB](example.png)
+
 > Skiing is a popular winter sport discipline with a long history of competitive events. In this domain, computer vision has the potential to enhance the understanding of athletes’ performance, but its application lags behind other sports due to limited studies and datasets. Our paper makes a step forward in filling such gaps. A thorough investigation is performed on the task of skier tracking in a video capturing his/her complete performance. Obtaining continuous and accurate skier localization is preemptive for further higher-level performance analyses. To enable our study, the largest and most annotated dataset for computer vision in skiing, SkiTB, is introduced. Several visual object tracking algorithms, including both established methodologies and a newly introduced skier-optimized baseline algorithm, are tested using the dataset. The results provide valuable insights into the applicability of different tracking methods for vision-based skiing analysis.
 
 ## Authors
