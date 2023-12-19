@@ -11,7 +11,7 @@ parser.add_argument('--split_file', help='Path to split file containing trin, va
 parser.add_argument('--visualize', help='Visualize the running performance of the tracker', action='store_true')
 args = parser.parse_args()
 
-tracker = TrackerSiamFC()
+tracker = TrackerSiamFC(return_conf=True)
 
 root_dir = './SkiTB'
 
