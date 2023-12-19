@@ -76,9 +76,14 @@ cd SkiTB-toolkit
 # Clone a the GOT-10k pre-trained SiamFC
 pip install torch opencv-python got10k
 git clone https://github.com/matteo-dunnhofer/siamfc-pytorch.git siamfc_pytorch
+mkdir siamfc_pytorch/pretrained
 wget -nc --no-check-certificate "https://drive.google.com/uc?export=download&id=1UdxuBQ1qtisoWYFZxLgMFJ9mJtGVw6n4" -O siamfc_pytorch/pretrained/siamfc_alexnet_e50.pth
       
-python example_skitb.py
+python example_skitb.py --discipline AL # for running on the whole set of videos related to alpine skiing
+python example_skitb.py --discipline JP # for running on the whole set of videos related to ski jumping
+python example_skitb.py --discipline FS # for running on the whole set of videos related to freestyle skiing
+
+python example_skitb.py --discipline AL --split-file [path-to-json-split-file-in-SkiTB] --split test # for running on the test set of videos related to alpine skiing
 ```
 In order for this code to work, the SkiTB dataset should be downloaded from [this link](https://forms.office.com/Pages/ResponsePage.aspx?id=Fd5qbmwpJEKsWByOwv1TqGZ0FiFPXjFKh2JII46hSYhUMVQ2RE0yS0FMMEhFSVNWNUxNWks3M0hYSy4u), unpacked, and put in the ```SkiTB-toolkit``` folder. The dataset can be also stored in another location but in that case line 16 of ```example_skitb.py``` should be changed to point to the dataset's main folder.
 

@@ -44,7 +44,7 @@ class Tracker(object):
             if visualize:
                 show_frame(image, boxes[f, :])
 
-        return boxes, times
+        return boxes, confidences, times
 
 
 from .identity_tracker import IdentityTracker

@@ -49,9 +49,9 @@ class SkiTB(object):
             index = self.seq_names.index(index)
 
         if self.mode == 'MC':
-            frame_idxs = np.loadtxt(os.path.join(self.seq_dirs[index], 'MC', 'frames.txt' if self.anno_type == 'whole' else f'frames-{self.anno_type}.txt' ), delimiter='\n')
-            anno = np.loadtxt(os.path.join(self.seq_dirs[index], 'MC', 'boxes.txt' if self.anno_type == 'whole' else f'boxes-{self.anno_type}.txt'), delimiter=',')
-            visibilities = np.loadtxt(os.path.join(self.seq_dirs[index], 'MC', 'visibilities.txt' if self.anno_type == 'whole' else f'visibilities-{self.anno_type}.txt'), delimiter='\n')
+            frame_idxs = np.loadtxt(os.path.join(self.seq_dirs[index], 'MC', 'frames.txt'), delimiter='\n')
+            anno = np.loadtxt(os.path.join(self.seq_dirs[index], 'MC', 'boxes.txt'), delimiter=',')
+            visibilities = np.loadtxt(os.path.join(self.seq_dirs[index], 'MC', 'visibilities.txt'), delimiter='\n')
             camera_idxs = np.loadtxt(os.path.join(self.seq_dirs[index], 'MC', 'cameras.txt'), delimiter='\n').astype(np.int64)
             img_files = [os.path.join(self.seq_dirs[index], 'frames', f'{int(fi):05d}.jpg') for fi in frame_idxs]
         else:
