@@ -33,12 +33,12 @@ When using the dataset or toolkit, please reference:
 }
 
 @article{SkiTBcviu,
-	title = {Visual tracking in camera-switching outdoor sport videos: Benchmark and baselines for skiing},
-	journal = {Computer Vision and Image Understanding},
-	volume = {243},
-	pages = {103978},
-	year = {2024},
-	doi = {https://doi.org/10.1016/j.cviu.2024.103978},
+  title = {Visual tracking in camera-switching outdoor sport videos: Benchmark and baselines for skiing},
+  journal = {Computer Vision and Image Understanding},
+  volume = {243},
+  pages = {103978},
+  year = {2024},
+  doi = {https://doi.org/10.1016/j.cviu.2024.103978},
 }
 ```
 
