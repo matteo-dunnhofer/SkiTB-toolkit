@@ -101,7 +101,7 @@ In order for this code to work, the SkiTB dataset should be downloaded from [thi
 The raw results of the trackers benchmarked in our paper can be downloaded from [this link](https://uniudamce-my.sharepoint.com/:u:/g/personal/matteo_dunnhofer_uniud_it/EVU0aGZmYYlLnOBBCJaAF6EBV7OCYnvSr91KajjA5i91Gg?e=NOm3h0).
 
 
-## The SkiTB Visual Tracking Challenge
+## [The SkiTB Visual Tracking Challenge](https://codalab.lisn.upsaclay.fr/competitions/20897)
 We will host SkiTB Visual Tracking Challenge in conjunction with the [3rd Workshop on Computer Vision for Winter Sports](https://sites.google.com/unitn.it/cv4ws-wacv2025/) held at the [IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2025](https://wacv2025.thecvf.com). For instructions on how to participate, please see the [challenge's platform on CodaLab](https://codalab.lisn.upsaclay.fr/competitions/20897). This toolkit can be used to generate submissions for the challenge. Specifically, after running your tracker on the test videos of all the AL, JP, FS disciplines as explained above, you can use the script ```export_results_skitb_visual_tracking_challenge.py``` to generate the zipped JSON that can be submitted to the platform. The following steps give a sense to what you have to do to obtain the submission for the challenge:
 ```
 # Download the toolkit, install repositories, and implement your tracker
